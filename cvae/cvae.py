@@ -6,14 +6,15 @@ import time
 import shutil
 
 import numpy as np
-import tensorflow as tf
+
+
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 try:
     tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 except:
     pass
 
-# import matplotlib as mpl
-# mpl.use('TkAgg')
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 

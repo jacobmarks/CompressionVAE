@@ -1,8 +1,10 @@
 # CompressionVAE
 
+❗ FORKED from [here](https://github.com/maxfrenzel/CompressionVAE/tree/master) to support TF>2
+
 Data embedding API based on the Variational Autoencoder (VAE), originally proposed by Kingma and Welling https://arxiv.org/abs/1312.6114.
 
-This tool, implemented in TensorFlow 1.x, is designed to work similar to familiar dimensionality reduction methods such as scikit-learn's t-SNE or UMAP, but also go beyond their capabilities in some notable ways, making full use of the VAE as a generative model.
+This tool is designed to work similar to familiar dimensionality reduction methods such as scikit-learn's t-SNE or UMAP, but also go beyond their capabilities in some notable ways, making full use of the VAE as a generative model.
 
 While I decided to call the tool itself CompressionVAE, or CVAE for short, I mainly chose this to give it a unique name.
 In practice, it is based on a standard VAE, with the (optional) addition of Inverse Autoregressive Flow (IAF) layers to allow for more flexible posterior distributions.
@@ -18,11 +20,7 @@ CompressionVAE has **several unique advantages** over the common manifold learni
 
 ## Installing CompressionVAE
 
-CompressionVAE is distributed through PyPI under the name `cvae` (https://pypi.org/project/cvae/). To install the latest version, simply run
-```
-pip install cvae
-```
-Alternatively, to locally install CompressionVAE, clone this repository and run the following command from the CompressionVAE root directory.
+To locally install CompressionVAE, clone this repository and run the following command from the CompressionVAE root directory.
 ```
 pip install -e .
 ```
